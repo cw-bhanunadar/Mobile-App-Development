@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1030293954286",
+    "firebase_url": "https://essen-bhanu.firebaseio.com",
+    "project_id": "essen-bhanu",
+    "storage_bucket": "essen-bhanu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030293954286:android:1e7f4a2b64720705",
+        "android_client_info": {
+          "package_name": "com.example.bhanu.essen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030293954286-iqprs5aogo30p6kejlolqbeqfks6eqvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bhanu.essen",
+            "certificate_hash": "542f5017bd8e2051a58b913e599ea1dc8bd34ad8"
+          }
+        },
+        {
+          "client_id": "1030293954286-p770e7ledgvrejghejbglmgccgcs9j47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWb92SeLwFPqHesQhXJpywIztfO74h67s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030293954286-p770e7ledgvrejghejbglmgccgcs9j47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:background="#d40311"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text=""
+                    android:id="@+id/restaurant_name"
+                    android:layout_width="wrap_content"
+                    android:background="#d40311"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="#fff"
+                android:layout_gravity="right"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="NEXT"
+                    android:id="@+id/add_review_to_restaurant"
+                    android:layout_width="wrap_content"
+                    android:background="#d40311"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/rating"
+            android:hint="rate below 5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Review"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/the_review"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

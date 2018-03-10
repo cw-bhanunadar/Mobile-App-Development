@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/menu_account"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="My Account"/>
+
+    <item android:id="@+id/Online_Orders"
+        android:icon="@mipmap/ic_add_shopping_cart_black_24dp"
+        android:title="Online Orders"/>
+
+    <item android:id="@+id/Nearby"
+        android:icon="@mipmap/ic_location_on_black_24dp"
+        android:title="Nearby"/>
+
+    <item android:id="@+id/Table_Booking"
+        android:icon="@mipmap/catering"
+        android:title="Table Booking"/>
+
+    <item android:id="@+id/Feed"
+        android:icon="@mipmap/ic_event_note_black_24dp"
+        android:title="Feed"/>
+
+    <item android:id="@+id/contact_us"
+        android:icon="@mipmap/ic_mail_black_24dp"
+        android:title="Contact Us"
+        />
+    <item android:id="@+id/logout"
+        android:icon="@mipmap/logout"
+        android:title="Logout"/>
+    </group>
+</menu>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/restaurant_image"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:id="@+id/restaurant_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:text="3.5"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="McDonald's"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/restaurant_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:text="Hill Road,Bandra"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/restaurant_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="7 am to 12 Midnight(Sun)"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/restaurant_basic"
+                android:background="#FFF"
+                android:text="101 Reviews 83 BookMarks 264 Been There"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/call_op"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/been_here"
+                    android:src="@mipmap/ic_beenhere_black_36dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/bookmark_image"
+                    android:src="@mipmap/ic_bookmark_border_black_36dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/review_image"
+                    android:src="@mipmap/ic_rate_review_black_24dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_add_a_photo_black_24dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="    Call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="    Been Here" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" BookMark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Review" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="add Pics" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DCDCDC	" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALL" />
+
+                    <TextView
+                        android:id="@+id/restaurant_phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7208755685"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="CUSISINES" />
+
+                    <TextView
+                        android:id="@+id/restaurant_cuisines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Casual Dinning"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="AVERAGE COST" />
+
+                    <TextView
+                        android:id="@+id/restaurant_average_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="950 rs for two(approx.)"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MORE INFO" />
+
+                    <TextView
+                        android:id="@+id/restaurant_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no alcohol"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DCDCDC	" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="ADDRESS"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/full_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="heloo how are yiyu fjjg " />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC	"
+                    android:gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/restaurant_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="30dp"
+                    android:text="Map and Directions"
+                    android:textColor="#FF0000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DCDCDC	" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Opening Hours "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/opening_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="mon 7am to 11 pm" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DCDCDC	" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/restaurant_rating2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:text="3.5"
+                    android:padding="10dp"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFF"
+                    android:textStyle="bold"
+                    android:text="Based on x reviews"
+                    android:padding="10dp"
+                     />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC	" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numbers_reviews"
+                android:padding="10dp"
+                android:textColor="#FF0000"
+                android:gravity="right"
+                android:text="Read All Reviews(x)"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DCDCDC	" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#FFF"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+
+                        android:textColor="#000"
+                        android:text="How did your visit go?"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tell everyone about it!"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:id="@+id/add_review"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:text="Add Your Review"
+                    android:textColor="#FFF"
+                    android:background="#4169E1"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DCDCDC	" />
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

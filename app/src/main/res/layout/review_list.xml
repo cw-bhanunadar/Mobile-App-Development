@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bhanu.controller.Review_List"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    >
+
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        tools:text="lutti"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_email"
+        android:text="bhanu.nadar@gmail.com"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#008000"
+        android:text="4.5"
+        android:id="@+id/display_rating"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/display_Review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="i love the food here awesom e the texture really loved "
+        android:textColor="#000"
+        android:paddingTop="14dp"
+        android:paddingBottom="16dp"
+
+
+        />
+
+
+
+
+</LinearLayout>
