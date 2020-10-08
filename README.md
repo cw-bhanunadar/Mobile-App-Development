@@ -1,1 +1,1 @@
-MyApplication
+Our Application
